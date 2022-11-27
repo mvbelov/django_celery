@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'app_celery',
     'django_celery_results',
     'channels',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -135,5 +136,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CELERY_BROKER_URL = "redis://localhost:6379"
+CELERY_BROKER_URL = "redis://localhost:6379/1"
 CELERY_RESULT_BACKEND = 'django-db'
